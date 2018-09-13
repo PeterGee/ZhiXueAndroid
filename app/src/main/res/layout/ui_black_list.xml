@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+    <include layout="@layout/include_title"/>
+    <com.risenb.studyknowledge.views.refreshlayout.MyRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_marginTop="@dimen/dm133"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_black_list"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm000">
+
+        </android.support.v7.widget.RecyclerView>
+    </com.risenb.studyknowledge.views.refreshlayout.MyRefreshLayout>
+
+    <include layout="@layout/include_bottom"/>
+</RelativeLayout>

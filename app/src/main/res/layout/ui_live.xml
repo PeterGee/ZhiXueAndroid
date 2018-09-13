@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.risenb.studyknowledge.views.refreshlayout.MyRefreshLayout
+        android:id="@+id/mrl_live_notice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_live_notice"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm000">
+
+        </android.support.v7.widget.RecyclerView>
+    </com.risenb.studyknowledge.views.refreshlayout.MyRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_release"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/release_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_margin="@dimen/dm030">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/edit_iv"/>
+        <TextView
+            android:id="@+id/tv_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dm010"
+            android:text="发布"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dm022"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:paddingLeft="@dimen/dm022"
+        android:layout_marginTop="@dimen/dm022"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/dm080"
+            android:layout_height="@dimen/dm080"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/head_icon" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm020"
+            android:layout_toRightOf="@+id/iv_head"
+            android:gravity="center"
+            android:textSize="@dimen/dm026"
+            android:textColor="@color/gray_3"
+            android:text="sdfgsd" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dm030"
+            android:text="2017-12-12"
+            android:textSize="@dimen/dm024"
+            android:textColor="@color/gray_9" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:padding="@dimen/dm020"
+        android:id="@+id/tv_comment_floor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:lineSpacingExtra="@dimen/dm008"
+        android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"
+        android:textSize="@dimen/dm028"
+        android:textColor="@color/coach_gray"/>
+
+    <TextView
+        android:layout_marginBottom="@dimen/dm020"
+        android:id="@+id/tv_reply"
+        android:layout_marginRight="@dimen/dm030"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回复"
+        android:textSize="@dimen/dm026"
+        android:textColor="@color/coach_gray"/>
+
+    <RelativeLayout
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_comment_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

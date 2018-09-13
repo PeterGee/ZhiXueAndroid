@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm250">
+        <ImageView
+                android:id="@+id/iv_income_icon"
+                android:layout_width="@dimen/dm040"
+                android:layout_height="@dimen/dm036"/>
+        <TextView
+                android:id="@+id/tv_income_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm011"
+                android:textColor="@color/gray_3"
+                android:textSize="@dimen/dm030"/>
+        <TextView
+                android:id="@+id/tv_income_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm016"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/dm026"/>
+
+
+
+</LinearLayout>

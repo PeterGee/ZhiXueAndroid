@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.risenb.studyknowledge">
+
+    <!-- 可用网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- WIFI网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 屏幕保持唤醒 不锁屏 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 调整多媒体音量 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!--************************************************ SD卡权限 ***********************************************-->
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- sdcard操作允许 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取SD卡数据 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--************************************************ SD卡权限 end ***********************************************-->
+
+
+    <!--************************************************ 日历 ***********************************************-->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <!--************************************************ 日历 end ***********************************************-->
+
+
+    <!--************************************************ 访问照相机 ***********************************************-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--************************************************ 访问照相机 end ***********************************************-->
+
+
+    <!--************************************************ 联系人 ***********************************************-->
+    <!-- 读联系人 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 写联系人 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!--************************************************ 联系人 end ***********************************************-->
+
+
+    <!--************************************************ 位置 ***********************************************-->
+    <!-- 访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 获取精确位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--************************************************ 位置 end ***********************************************-->
+
+    <!--************************************************ 使用麦克风 ***********************************************-->
+    <!-- 使用麦克风 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--************************************************ 使用麦克风 end ***********************************************-->
+
+    <!--************************************************ 电话 ***********************************************-->
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 读取电话状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--************************************************ 电话 end ***********************************************-->
+
+
+    <!--************************************************ 传感器 ***********************************************-->
+    <!-- 传感器信息 -->
+    <uses-permission android:name="android.permission.SENSOR_INFO" />
+    <!-- 调用传感器 -->
+    <uses-permission android:name="android.permission.SENSOR_ENABLE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <!--************************************************ 传感器 end ***********************************************-->
+
+
+    <!--************************************************ 短信 ***********************************************-->
+    <!--  发送消息-->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!--  阅读消息-->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!--  写入消息-->
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <!-- 接收消息 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!--************************************************ 短信 end ***********************************************-->
+
+
+    <!-- 振动-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 录音-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+    <application
+        android:name="com.risenb.studyknowledge.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/MyAppTheme">
+
+        <service android:name=".ui.post.RecordingService"/>
+
+        <activity
+            android:name="com.risenb.studyknowledge.ui.GuideUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- 兼容android 7.0 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.risenb.studyknowledge.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <activity
+            android:name="com.risenb.studyknowledge.ui.NavigUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.risenb.studyknowledge.ui.web.WebUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.risenb.studyknowledge.ui.TabUI"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+
+        <activity android:name=".ui.login.LoginUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.login.RegisterUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.login.ForgetPasswordUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.personal.MemberManagerUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.personal.MemberApplyUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.personal.KickOutMemberUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.personal.BlacklistUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.personal.SignInManageUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.personal.MemberSettingUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.personal.MemberDetailUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.risenb.studyknowledge.ui.institution.InstitutionManageUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.topic.TopicListManageUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.institution.MedalManagerUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.institution.AddMedalUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.institution.ReportManageUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.institution.ReportDetailUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.institution.MemberLevelSettingUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.institution.BusinessInUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.institution.BusinessOutUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.institution.AddCooperationUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.institution.RecentEarningsUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.institution.IncomeGroupUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.institution.IncomeTopicUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.institution.IncomePostUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.institution.IncomeRewardUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.institution.IncomeRewardDivideUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.institution.IncomePaidQuestionUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.institution.VIPApplyDetailUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.institution.CashDetailsUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.institution.AnnounceEditUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.institution.AddAnnounceUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.institution.AnnounceDetailUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.institution.FeedbackListUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.institution.FeedbackDetailUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.institution.AddFeedbackUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.institution.AboutPlatformUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.topic.ActionManageUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.topic.VoteManageUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.topic.ActionNeophyteUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.live.ReleaseLiveUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.post.PostsListUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.topic.AddTopicUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.post.ReleasePostUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.live.SelectLecturersUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.post.ReleaseActionUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.post.ReleaseVoteUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.topic.VoteNeophyteUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.post.PostsDetailsUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.info.PersonalInfoUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.info.EditSignUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.info.EditUsernameUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.info.ModifyPhoneUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.info.ModifyMailboxUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.info.ModifyPwdUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.info.ModifyNewPhoneUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.info.ModifyNewMailboxUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.info.PersonalBgUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.info.JoinedCollegeUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.topic.ChargePrivilegeUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".ui.post.ReleaseContentsUI"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+
+        <activity android:name=".ui.post.PostsDetailsValueUI"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".ui.institution.AddCollegeUI"/>
+    </application>
+
+</manifest>

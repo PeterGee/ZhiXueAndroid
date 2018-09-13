@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_title"/>
+
+    <com.risenb.studyknowledge.views.refreshlayout.MyRefreshLayout
+        android:id="@+id/mrl_action_neophyte"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_action_neophyte"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm000">
+
+        </android.support.v7.widget.RecyclerView>
+    </com.risenb.studyknowledge.views.refreshlayout.MyRefreshLayout>
+
+    <include layout="@layout/include_bottom"/>
+</LinearLayout>

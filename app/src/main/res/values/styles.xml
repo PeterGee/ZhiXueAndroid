@@ -1,0 +1,203 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="MyAppTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textSize">@dimen/dm028</item>
+        <item name="android:textColor">#333</item>
+    </style>
+
+    <!-- 底端tab -->
+    <style name="tab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <!--<item name="android:background">@drawable/tab_bg</item>-->
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/dm016</item>
+        <item name="android:paddingBottom">@dimen/dm001</item>
+        <item name="android:textSize">@dimen/dm022</item>
+        <item name="android:textColor">@drawable/tab_text</item>
+    </style>
+    <!-- dialog样式 -->
+    <style name="custom_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="custom_dialog_style_new">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <!-- EditText -->
+    <style name="edit_style">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">#333</item>
+        <item name="android:textColorHint">#999</item>
+        <item name="android:textSize">@dimen/dm026</item>
+        <item name="android:textCursorDrawable">@drawable/color_cursor</item>
+        <item name="android:digits">@string/et_limit_gbk</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_drawable</item>
+        <item name="android:minHeight">@dimen/dm028</item>
+        <item name="android:maxHeight">@dimen/dm028</item>
+    </style>
+    <!--PopToast-->
+    <style name="popup_window_style">
+        <item name="android:windowEnterAnimation">@anim/in</item>
+        <item name="android:windowExitAnimation">@anim/out</item>
+
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+    <!--学院管理条目-->
+    <style name="iv_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dm020</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="tv_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dm020</item>
+        <item name="android:textColor">@color/gray_3</item>
+        <item name="android:textSize">@dimen/dm030</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="iv_right_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/dm024</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@mipmap/right_arrow</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="view_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dm001</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/gray_line</item>
+    </style>
+
+    <!--话题管理-->
+    <style name="topic_list_manage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dm100</item>
+        <item name="android:layout_marginLeft">@dimen/dm020</item>
+        <item name="android:layout_marginRight">@dimen/dm024</item>
+        <item name="android:drawablePadding">@dimen/dm020</item>
+        <item name="android:drawableRight">@mipmap/right_arrow</item>
+        <item name="android:textColor">@color/gray_3</item>
+        <item name="android:textSize">@dimen/dm030</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="sb_shadow_radius" format="reference|dimension" />
+        <attr name="sb_shadow_offset" format="reference|dimension" />
+        <attr name="sb_shadow_color" format="reference|color" />
+        <attr name="sb_uncheck_color" format="reference|color" />
+        <attr name="sb_checked_color" format="reference|color" />
+
+        <attr name="sb_border_width" format="reference|dimension" />
+        <attr name="sb_checkline_color" format="reference|color" />
+        <attr name="sb_checkline_width" format="reference|dimension" />
+        <attr name="sb_uncheckcircle_color" format="reference|color" />
+        <attr name="sb_uncheckcircle_width" format="reference|dimension" />
+        <attr name="sb_uncheckcircle_radius" format="reference|dimension" />
+
+        <attr name="sb_checked" format="reference|boolean" />
+        <attr name="sb_shadow_effect" format="reference|boolean" />
+        <attr name="sb_effect_duration" format="reference|integer" />
+        <attr name="sb_button_color" format="reference|color" />
+        <attr name="sb_show_indicator" format="reference|boolean" />
+        <attr name="sb_background" format="reference|color" />
+        <attr name="sb_enable_effect" format="reference|boolean" />
+    </declare-styleable>
+
+    <style name="AnimUp" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/dm030</item>
+    </style>
+
+    <style name="gray_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dm002</item>
+        <item name="android:background">@color/gray_line</item>
+    </style>
+
+    <style name="release_common_rl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dm100</item>
+        <item name="android:layout_marginLeft">@dimen/dm020</item>
+        <item name="android:layout_marginRight">@dimen/dm020</item>
+    </style>
+
+    <style name="release_common_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/gray_3</item>
+        <item name="android:textSize">@dimen/dm030</item>
+    </style>
+
+    <style name="release_common_tv_show">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">@dimen/dm010</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:textColor">@color/gray_6</item>
+        <item name="android:textSize">@dimen/dm028</item>
+    </style>
+
+    <declare-styleable name="ShadowLayout">
+        <attr name="shadowColor" format="color" />
+        <attr name="shadowRadius" format="dimension" />
+        <attr name="shadowDx" format="dimension" />
+        <attr name="shadowDy" format="dimension" />
+        <attr name="shadowSide">
+            <flag name="all" value="0x1111" />
+            <flag name="left" value="0x0001" />
+            <flag name="top" value="0x0010" />
+            <flag name="right" value="0x0100" />
+            <flag name="bottom" value="0x1000" />
+        </attr>
+    </declare-styleable>
+
+    <style name="post_appbar" parent="android:Widget">
+        <item name="elevation">0dp</item>
+        <item name="android:background">@color/main</item>
+    </style>
+</resources>

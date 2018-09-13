@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg_title"
+    android:orientation="vertical">
+    <View
+            android:id="@+id/view_statusbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="标题"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dm036" />
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="@dimen/dm040"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dm020">
+
+            <ImageView
+                    android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/back" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dm020"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dm010"
+                android:gravity="center"
+                android:text="标题"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm028"
+                android:visibility="gone" />
+            <RelativeLayout
+                    android:id="@+id/rl_left"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="@dimen/dm065"
+                        android:layout_height="@dimen/dm073"
+                        android:src="@mipmap/head_bg" />
+                <ImageView
+                        android:id="@+id/iv_left"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="@dimen/dm065"
+                        android:layout_height="@dimen/dm065"
+                        android:layout_marginBottom="@dimen/dm010"
+                        android:padding="@dimen/dm004"
+                        android:src="@drawable/left" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dm020"
+            android:paddingRight="@dimen/dm020"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="标题"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm028"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm010"
+                android:src="@drawable/right"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+            android:id="@+id/view_bg"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm300"/>
+</LinearLayout>

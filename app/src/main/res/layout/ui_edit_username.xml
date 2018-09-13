@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include layout="@layout/include_title"/>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/dm020"
+                android:layout_marginRight="@dimen/dm020"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm000">
+                <EditText
+                        android:id="@+id/et_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:maxLength="10"
+                        android:textSize="@dimen/dm028"
+                        android:textColor="@color/gray_3"
+                        android:hint="@string/click_edit_username"
+                        android:textColorHint="@color/gray_9" />
+                <View
+                        android:layout_marginTop="@dimen/dm034"
+                        style="@style/view_line"/>
+            <TextView
+                    android:id="@+id/tv_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm046"
+                    android:layout_marginRight="@dimen/dm046"
+                    android:background="@mipmap/bg_botton"
+                    android:layout_marginTop="@dimen/dm350"
+                    android:gravity="center"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm032"/>
+
+
+        </LinearLayout>
+    <include layout="@layout/include_bottom"/>
+</LinearLayout>

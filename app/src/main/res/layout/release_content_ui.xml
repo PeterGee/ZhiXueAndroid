@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <!--<ScrollView-->
+        <!--android:layout_below="@+id/ll_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginBottom="@dimen/dm102"-->
+        <!--android:scrollbars="none">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_institution_issues"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:background="@color/white"
+        android:layout_above="@+id/rl_release"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_below="@+id/ll_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm100"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_expression"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm024"
+                android:background="@mipmap/expression_iv"/>
+
+            <ImageView
+                android:id="@+id/iv_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm062"
+                android:background="@mipmap/picture_iv"/>
+
+            <ImageView
+                android:id="@+id/iv_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm062"
+                android:background="@mipmap/voice_iv"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dm030"
+                android:text="确认"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/dm032" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm200">
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dm030"
+                android:background="@null"
+                android:hint="请输入内容"
+                android:textColorHint="@color/gray_9"
+                android:textSize="@dimen/dm030"
+                android:textColor="@color/gray_6"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_release"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm102"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/v_bottom"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_release"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_release"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="发布"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/dm032" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/upload_iv"
+                    android:drawablePadding="@dimen/dm010"
+                    android:text="上传"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm032" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/include_bottom"/>
+
+</LinearLayout>

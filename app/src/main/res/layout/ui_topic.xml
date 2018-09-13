@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_topic"
+            style="@style/topic_list_manage"
+            android:drawableLeft="@mipmap/topic_manage_iv"
+            android:text="话题列表管理" />
+
+        <View style="@style/gray_line" />
+
+        <TextView
+            android:id="@+id/tv_action"
+            style="@style/topic_list_manage"
+            android:drawableLeft="@mipmap/action_manage_iv"
+            android:text="活动管理" />
+
+        <View style="@style/gray_line" />
+
+
+        <TextView
+            android:id="@+id/tv_vote"
+            style="@style/topic_list_manage"
+            android:drawableLeft="@mipmap/vote_manage_iv"
+            android:text="投票管理" />
+
+        <View style="@style/gray_line" />
+
+
+</LinearLayout>

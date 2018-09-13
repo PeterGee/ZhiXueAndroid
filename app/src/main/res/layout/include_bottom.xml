@@ -1,0 +1,6 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/v_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dm001"
+    android:layout_alignParentBottom="true"
+    android:background="#000" />

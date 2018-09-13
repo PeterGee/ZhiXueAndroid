@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include layout="@layout/include_title"/>
+    <ScrollView
+            android:scrollbars="none"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dm020"
+            android:layout_marginRight="@dimen/dm024"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm000">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <EditText
+                    android:id="@+id/et_announce_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:textSize="@dimen/dm030"
+                    android:textColor="@color/gray_3"
+                    android:textColorHint="@color/gray_3"
+                    android:maxLength="50"/>
+            <View
+                    android:layout_marginTop="@dimen/dm034"
+                    style="@style/view_line"/>
+            <LinearLayout
+                    android:layout_marginTop="@dimen/dm024"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm400">
+                <EditText
+                        android:id="@+id/et_announce_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:background="@null"
+                        android:textSize="@dimen/dm028"
+                        android:textColor="@color/gray_6"
+                        android:maxLength="500"
+                        android:textColorHint="@color/gray_6" />
+            </LinearLayout>
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm037"
+                    android:background="@mipmap/bg_feedback_bottom"/>
+            <TextView
+                    android:id="@+id/tv_save"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm046"
+                    android:layout_marginRight="@dimen/dm042"
+                    android:background="@mipmap/bg_botton"
+                    android:layout_marginTop="@dimen/dm150"
+                    android:gravity="center"
+                    android:text="@string/commit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm032"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/include_bottom"/>
+</LinearLayout>

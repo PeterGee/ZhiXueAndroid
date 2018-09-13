@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@mipmap/post_title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view_statusbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="标题"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm036" />
+
+            <LinearLayout
+                android:id="@+id/ll_post_search"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm070"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dm020"
+                android:layout_marginRight="@dimen/dm080"
+                android:layout_marginLeft="@dimen/dm080"
+                android:background="@mipmap/search_box">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dm026"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/search" />
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_marginLeft="@dimen/dm010"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:hint="请输入你想搜索的关键词"
+                    android:textSize="@dimen/dm024"
+                    android:textColor="@color/gray_6"
+                    android:textColorHint="@color/gray_9"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"/>
+
+                <ImageView
+                    android:id="@+id/iv_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:src="@mipmap/close_search"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_back"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dm024"
+                android:paddingRight="@dimen/dm030">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="@dimen/dm020"
+                    android:layout_height="@dimen/dm036"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/back" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_search"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dm030"
+                android:paddingRight="@dimen/dm024">
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/search_white" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/tab_posts"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm070"
+            android:layout_marginBottom="@dimen/dm020"
+            app:tl_textAllCaps="true"
+            app:tl_textBold="BOTH"
+            app:tl_textsize="@dimen/dm032"
+            app:tl_indicator_width_equal_title ="true"
+            app:tl_tab_space_equal="true"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_release"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/release_bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_margin="@dimen/dm050">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/edit_iv"/>
+            <TextView
+                android:id="@+id/tv_release"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dm010"
+                android:text="发布"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm022"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/include_bottom"/>
+
+</LinearLayout>

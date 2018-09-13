@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="service_host_address">http://kooboss.imwork.net/risenb-client-web/</string>
+    <string name="service_host_image">http://rajy.4pole.cn</string>
+    <!-- 测试 -->
+    <string name="service_test_address">http://192.168.1.174:8080/client/</string>
+    <string name="defaulpage">app/defaulpage</string>
+
+
+    <!-- 文件上传 -->
+    <string name="uploadFiles">sys/uploadFiles</string>
+
+
+    <!-- 登陆 -->
+    <string name="userLogin">user/login</string>
+    <!-- 注册 -->
+    <string name="userRegister">user/userRegister</string>
+    <!-- 验证码 -->
+    <string name="authcode">user/getSmsCode</string>
+    <!--邮箱验证码-->
+    <string name="getEmailCode">user/getEmailCode</string>
+    <!-- 忘记密码 -->
+    <string name="forgetPassword">user/updatePwdByMobile</string>
+    <!-- 修改个人资料 -->
+    <string name="updateInfo">user/update</string>
+    <!-- 获取个人资料 -->
+    <string name="getUserInfo">user/getInformation</string>
+    <!--修改密码-->
+    <string name="updatePwd">user/updatePwd</string>
+
+
+    <!-- 获取C端会员管理 -->
+    <string name="getVipList">attendance/getVipList</string>
+    <!-- 获取会员详情 -->
+    <string name="getMemberDetail">attendance/getVipInfo</string>
+    <!-- 保存会员信息 -->
+    <string name="saveMemberInfo">attendance/saveVip</string>
+    <!-- 踢出会员 -->
+    <string name="kickOutVip">attendance/kickOutVip</string>
+    <!-- 踢出会员列表 -->
+    <string name="getDelynVipList">attendance/getDelynVipList</string>
+    <!-- 邀请会员 -->
+    <string name="kickOutVipInvite">attendance/delynVipInvite</string>
+    <!-- 黑名单列表 -->
+    <string name="getBlackList">attendance/getBlackList</string>
+    <!-- 取消拉黑 -->
+    <string name="removeBlackList">attendance/removeBlackList</string>
+    <!-- 申请会员列表 -->
+    <string name="getApplyVipList">attendance/getApplyVipList</string>
+    <!-- 拒绝/通过会员申请 -->
+    <string name="applyVipPass">attendance/applyVipPass</string>
+    <!-- 签到管理 -->
+    <string name="getSignin">signin/getSignin</string>
+
+
+    <!-- 获取学院信息 -->
+    <string name="getCollegeInfo">user/home</string>
+    <!--获取加入的学院列表-->
+    <string name="getMoreUserCollege">user/getMoreUserCollege</string>
+
+    <!-- 会员等级设置列表 -->
+    <string name="updateVipGrade">college/updateVipGrade</string>
+    <!-- 保存会员等级设置 -->
+    <string name="saveVipGrade">college/saveVipGrade</string>
+    <!-- VIP申请明细列表 -->
+    <string name="getVipDetail">college/getVipDetail</string>
+    <!--编辑学院-->
+    <string name="editCollege">college/editCollege</string>
+    <!-- 获取学院VIP列表 -->
+    <string name="getCollegeVip">college/getCollegeGradeList</string>
+
+    <!-- 获取勋章列表 -->
+    <string name="getMedalList">medalType/getMedalType</string>
+    <!-- 添加或修改勋章 -->
+    <string name="saveMedalType">medalType/saveMedalType</string>
+    <!-- 删除勋章 -->
+    <string name="delMedalType">medalType/delMedalType</string>
+
+    <!-- 友商购进列表 -->
+    <string name="getBuyInList">buyTopic/getBuyInList</string>
+    <!-- 友商售出列表 -->
+    <string name="getBuyOutList">buyTopic/getBuyOutList</string>
+    <!--添加友商售出-->
+    <string name="addBuyTopic">buyTopic/addBuyTopic</string>
+    <!--修改友商售出信息-->
+    <string name="updateBuyTopic">buyTopic/updateBuyTopic</string>
+    <!-- 删除/取消代理友商 -->
+    <string name="delBuyTopic">buyTopic/delBuyTopic</string>
+
+
+    <!-- 获取提现明细列表 -->
+    <string name="getCashRecordList">cashRecord/getCashRecordList</string>
+    <!--提现信息-->
+    <string name="getCashInfo">cashRecord/getCashInfo</string>
+    <!--申请提现-->
+    <string name="addCashRecord">cashRecord/addCashRecord</string>
+
+    <!-- 获取公告列表 -->
+    <string name="getNoticeList">notice/getNoticeList</string>
+    <!-- 删除公告 -->
+    <string name="delNotice">notice/delNotice</string>
+    <!-- 新增公告 -->
+    <string name="addNotice">notice/addNotice</string>
+    <!-- 修改公告 -->
+    <string name="updateNotice">notice/updateNotice</string>
+
+    <!-- 获取意见反馈列表 -->
+    <string name="getAdviceList">advice/getAdviceList</string>
+    <!-- 意见反馈是否已读 -->
+    <string name="isRead">advice/isRead</string>
+    <!-- 意见反馈至平台 -->
+    <string name="addAdvice">advice/addAdvice</string>
+
+    <!-- 获取活动列表 -->
+    <string name="getActionList">activity/getActivityList</string>
+    <!--发布活动-->
+    <string name="addActivity">activity/addActivity</string>
+    <!--删除活动-->
+    <string name="delActivity">activity/delActivity</string>
+    <!--编辑活动-->
+    <string name="updateActivity">activity/updateActivity</string>
+    <!-- 获取活动参与人列表 -->
+    <string name="getActivityUserList">activity/getActivityUserList</string>
+
+
+    <!-- 获取投票列表 -->
+    <string name="getVoteList">vote/getVoteList</string>
+    <!-- 投票详情列表 -->
+    <string name="getVoteDetailList">vote/getVoteDetail</string>
+    <!--添加投票-->
+    <string name="addVote">vote/addVote</string>
+    <!--删除投票-->
+    <string name="delVote">vote/delVote</string>
+
+
+
+
+    <!-- 获取话题列表-->
+    <string name="getTopicList">topic/getTopicList</string>
+    <!-- 添加话题-->
+    <string name="addTopic">topic/addTopic</string>
+    <!--修改话题-->
+    <string name="updateTopic">topic/updateTopic</string>
+    <!--话题上下架-->
+    <string name="isUpOrDown">topic/isUpOrDown</string>
+    <!--话题排序-->
+    <string name="updateSort">topic/updateSort</string>
+
+    <!--=====================直播==================-->
+    <!--添加直播-->
+    <string name="addPostLive">postLive/addPostLive</string>
+    <!--讲师列表-->
+    <string name="getTeacherList">attendance/getTeacherList</string>
+
+    <!--=====================帖子==================-->
+    <!-- 获取帖子列表 -->
+    <string name="getPostList">post/getPostList</string>
+    <!--帖子详情-->
+    <string name="getPostDetail">post/getPostDetail</string>
+    <!--删除贴子-->
+    <string name="delPost">post/delPost</string>
+    <!--发布贴子-->
+    <string name="addPost">post/addPost</string>
+    <!--修改贴子-->
+    <string name="updatePost">post/updatePost</string>
+    <!--评论贴子-->
+    <string name="commentPost">post/commentPost</string>
+    <!--回复楼层贴子-->
+    <string name="commentReply">post/commentReply</string>
+    <!--有偿贴子详情-->
+    <string name="getYouChangDetail">post/getYouChangDetail</string>
+    <!--偷看有偿贴子-->
+    <string name="peepAnswer">post/peepAnswer</string>
+
+
+    <!--=======================学院管理====================-->
+    <!--举报列表 -->
+    <string name="getComplaintList">complaint/getComplaint</string>
+    <!--举报明细-->
+    <string name="getComplaintDes">complaint/getComplaintInfo</string>
+    <!--删除举报-->
+    <string name="delComplaintDes">complaint/delComplaint</string>
+
+
+    <!--=======================收益管理====================-->
+    <!--近期收益-->
+    <string name="getAccount">account/getAccount</string>
+    <!--话题收益-->
+    <string name="getTopicAccount">account/getTopicAccount</string>
+    <!--贴子收益-->
+    <string name="getPostAccount">account/getPostAccount</string>
+    <!--人群收益-->
+    <string name="getCollegeAccount">account/getCollegeAccount</string>
+    <!--打赏收益-->
+    <string name="getGiveAccount">account/getGiveAccount</string>
+    <!--打赏分成-->
+    <string name="getGiveScalAccount">account/getGiveScalAccount</string>
+    <!--近期收益-->
+    <string name="getYouChangAccount">account/getYouChangAccount</string>
+
+
+    <!-- 获取直播预告列表-->
+    <string name="getLiveList">postLive/getPostLiveList</string>
+    <!-- 删除直播预告-->
+    <string name="deleteLive">postLive/delPostLive</string>
+
+
+</resources>

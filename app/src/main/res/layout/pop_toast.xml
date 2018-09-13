@@ -1,0 +1,24 @@
+<com.lidroid.mutils.adbp.AdapLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dm060">
+
+        <TextView
+            android:id="@+id/tv_pop_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/sp_dialog"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dm010"
+            android:paddingLeft="@dimen/dm030"
+            android:paddingRight="@dimen/dm030"
+            android:paddingTop="@dimen/dm010" />
+    </RelativeLayout>
+</com.lidroid.mutils.adbp.AdapLayout>

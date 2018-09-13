@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include layout="@layout/include_title"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm064">
+        <RelativeLayout
+                android:id="@+id/rl_member_level"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dm020"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/dm160"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_down_arrow"
+                    android:src="@mipmap/down_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            <TextView
+                    android:id="@+id/tv_member_level"
+                    android:layout_toLeftOf="@+id/iv_down_arrow"
+                    android:layout_marginRight="@dimen/dm010"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/member_level"
+                    android:textColor="@color/gray_3"
+                    android:textSize="@dimen/dm026"/>
+
+        </RelativeLayout>
+        <LinearLayout
+                android:layout_toLeftOf="@+id/rl_member_level"
+                android:layout_marginRight="@dimen/dm030"
+                android:layout_marginLeft="@dimen/dm020"
+                android:orientation="horizontal"
+                android:background="@mipmap/search_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/search" />
+            <EditText
+                    android:id="@+id/et_member_search"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:hint="@string/search_member_name"
+                    android:textSize="@dimen/dm024"
+                    android:textColor="@color/gray_3"
+                    android:textColorHint="@color/gray_hint"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm000">
+        <com.risenb.studyknowledge.views.refreshlayout.MyRefreshLayout
+                android:id="@+id/refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_member_manager"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm000">
+
+            </android.support.v7.widget.RecyclerView>
+        </com.risenb.studyknowledge.views.refreshlayout.MyRefreshLayout>
+        <FrameLayout
+                android:id="@+id/fl_contener"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></FrameLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/include_bottom"/>
+
+</LinearLayout>

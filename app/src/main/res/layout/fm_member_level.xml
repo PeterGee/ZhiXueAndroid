@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:orientation="vertical"
+     >
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_level_list"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm440">
+    </android.support.v7.widget.RecyclerView>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm026"
+            android:background="@mipmap/member_level_bg"/>
+    <RelativeLayout
+        android:id="@+id/rl_level_bg"
+         android:background="#7fFFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+</LinearLayout>

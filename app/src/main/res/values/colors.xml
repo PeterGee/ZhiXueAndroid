@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main">#FFF</color>
+    <color name="translete">#00000000</color>
+    <color name="white">#FFF</color>
+    <color name="white_transparent">#7fFFFFFF</color>
+    <color name="bg_transparent">#66f7f7f7</color>
+    <color name="black">#000</color>
+    <color name="title">#D1EEEE</color>
+    <color name="gray">#dbdbdb</color>
+    <color name="gray_line">#f0f0f0</color>
+    <color name="gray_two">#aaa</color>
+    <color name="gray_three">#EDEDED</color>
+    <color name="pink">#8EE5EE</color>
+    <color name="blue">#48c6ef</color>
+    <color name="blue_pwd">#40c5f1</color>
+    <color name="gray_text">#888</color>
+    <color name="gray_9">#999999</color>
+    <color name="gray_6">#666666</color>
+    <color name="gray_3">#333333</color>
+    <color name="gray_2">#222222</color>
+    <color name="gray_5d">#5d5d5d</color>
+    <color name="gray_hint">#c5c5c5</color>
+    <color name="gray_c0">#c0c0c0</color>
+    <color name="gray_level_bg">#f8f8f8</color>
+    <color name="yellow">#FFB90F</color>
+    <color name="red">#ff0000</color>
+    <color name="red_checked">#ff212c</color>
+    <color name="pink_two">#FFC1C1</color>
+
+    <color name="red_normal">#FF0000</color>
+    <color name="coach_gray">#666666</color>
+    <color name="orange">#fd703e</color>
+    <color name="black_2">#222222</color>
+
+
+
+</resources>

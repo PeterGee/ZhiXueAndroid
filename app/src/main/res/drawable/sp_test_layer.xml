@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+
+            <!-- 圆角 -->
+            <corners android:radius="@dimen/dm010" />
+            <!-- 设置四个角的半径 -->
+            <corners
+                android:bottomLeftRadius="@dimen/dm010"
+                android:bottomRightRadius="@dimen/dm010"
+                android:topLeftRadius="@dimen/dm010"
+                android:topRightRadius="@dimen/dm010" />
+            <!-- 背景颜色 -->
+            <solid android:color="#90ffffff" />
+            <!-- 边框 -->
+            <stroke
+                android:width="@dimen/dm001"
+                android:color="#00376C" />
+            <!-- 渐变 -->
+            <gradient
+                android:endColor="#FFFFFF"
+                android:gradientRadius="50"
+                android:startColor="#ff8c00"
+                android:type="radial" />
+
+            <size
+                android:height="@dimen/dm001"
+                android:width="@dimen/dm001" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+
+            <!-- 圆角 -->
+            <corners android:radius="@dimen/dm010" />
+            <!-- 设置四个角的半径 -->
+            <corners
+                android:bottomLeftRadius="@dimen/dm010"
+                android:bottomRightRadius="@dimen/dm010"
+                android:topLeftRadius="@dimen/dm010"
+                android:topRightRadius="@dimen/dm010" />
+            <!-- 背景颜色 -->
+            <solid android:color="#90ffffff" />
+            <!-- 边框 -->
+            <stroke
+                android:width="@dimen/dm001"
+                android:color="#00376C" />
+            <!-- 渐变 -->
+            <gradient
+                android:endColor="#FFFFFF"
+                android:gradientRadius="50"
+                android:startColor="#ff8c00"
+                android:type="radial" />
+
+            <size
+                android:height="@dimen/dm001"
+                android:width="@dimen/dm001" />
+        </shape>
+    </item>
+
+</layer-list>

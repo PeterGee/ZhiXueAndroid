@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--C端会员管理-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_member_manager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm036">
+
+            <ImageView
+                android:id="@+id/iv_member_manager"
+                style="@style/iv_icon"
+                android:background="@mipmap/c_member_icon"/>
+
+            <TextView
+                style="@style/tv_item"
+                android:layout_toRightOf="@+id/iv_member_manager"
+                android:text="@string/C_member_manager"
+                />
+
+            <ImageView
+                style="@style/iv_right_arrow"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_marginTop="@dimen/dm034"/>
+    </LinearLayout>
+
+    <!--会员申请-->
+    <RelativeLayout
+        android:id="@+id/rl_member_application"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm101">
+
+        <ImageView
+            android:id="@+id/iv_member_application"
+            style="@style/iv_icon"
+            android:background="@mipmap/member_apply_icon"/>
+
+        <TextView
+            style="@style/tv_item"
+            android:layout_toRightOf="@+id/iv_member_application"
+            android:text="@string/member_application"
+            />
+
+        <ImageView
+            style="@style/iv_right_arrow"/>
+
+        <View
+            style="@style/view_line"/>
+    </RelativeLayout>
+    <!--踢出的会员-->
+    <RelativeLayout
+        android:id="@+id/rl_kick_out_member"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm101">
+
+        <ImageView
+            android:id="@+id/iv_kick_out_member"
+            style="@style/iv_icon"
+            android:background="@mipmap/kick_out_icon"/>
+
+        <TextView
+            style="@style/tv_item"
+            android:layout_toRightOf="@+id/iv_kick_out_member"
+            android:text="@string/kick_out_member"
+            />
+
+        <ImageView
+            style="@style/iv_right_arrow"/>
+
+        <View
+            style="@style/view_line"/>
+    </RelativeLayout>
+    <!--黑名单-->
+    <RelativeLayout
+        android:id="@+id/rl_black_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm101">
+
+        <ImageView
+            android:id="@+id/iv_black_list"
+            style="@style/iv_icon"
+            android:background="@mipmap/black_list_icon"/>
+
+        <TextView
+            style="@style/tv_item"
+            android:layout_toRightOf="@+id/iv_black_list"
+            android:text="@string/black_list"
+            />
+
+        <ImageView
+            style="@style/iv_right_arrow"/>
+
+        <View
+            style="@style/view_line"/>
+    </RelativeLayout>
+    <!--签到管理-->
+    <RelativeLayout
+        android:id="@+id/rl_sign_in_manager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm101">
+
+        <ImageView
+            android:id="@+id/iv_sign_in_manager"
+            style="@style/iv_icon"
+            android:background="@mipmap/sign_in_icon"/>
+
+        <TextView
+            style="@style/tv_item"
+            android:layout_toRightOf="@+id/iv_sign_in_manager"
+            android:text="@string/sign_in_manager"
+            />
+
+        <ImageView
+            style="@style/iv_right_arrow"/>
+
+        <View
+            style="@style/view_line"/>
+    </RelativeLayout>
+
+</LinearLayout>

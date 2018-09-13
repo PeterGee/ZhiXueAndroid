@@ -1,0 +1,60 @@
+import java.text.SimpleDateFormat
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.risenb.studyknowledge"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('..\\key\\zxueApp.jks')
+            storePassword "123456"
+            keyAlias "要学就学"
+            keyPassword "123456"
+        }
+        debug {
+            storeFile file('..\\key\\zxueApp.jks')
+            storePassword "123456"
+            keyAlias "要学就学"
+            keyPassword "123456"
+        }
+    }
+
+    //打包后自动生成文件
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def oldFile = output.outputFile
+            if (variant.buildType.name.equals('release')) {
+//                def currentDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss SSS").format(new Date())
+                def currentDate = new SimpleDateFormat("MM-dd HH.mm").format(new Date())
+                def releaseApkName = "要学就学_" + defaultConfig.versionName + "_" + currentDate + '.apk'
+                output.outputFile = new File(oldFile.parent, releaseApkName)
+            }
+        }
+    }
+//    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':mylibrary')
+    compile 'com.android.support:multidex:1.0.0'
+    compile files('libs/nineoldandroids-2.4.0.jar')
+}

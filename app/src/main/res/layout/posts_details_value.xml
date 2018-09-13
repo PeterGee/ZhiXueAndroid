@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_title" />
+
+    <RelativeLayout
+        android:paddingLeft="@dimen/dm022"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/dm080"
+            android:layout_height="@dimen/dm080"
+            android:background="@mipmap/head_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm010"
+            android:layout_toRightOf="@+id/iv_head"
+            android:orientation="vertical"
+            android:padding="@dimen/dm010">
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="sdfgsd"
+                android:textSize="@dimen/dm026"
+                android:textColor="@color/gray_3"/>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dm026"
+                    android:textColor="@color/gray_9"
+                    android:text="关注" />
+
+                <TextView
+                    android:id="@+id/tv_attention_num"
+                    android:layout_marginLeft="@dimen/dm010"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/dm026"
+                    android:text="500" />
+                <TextView
+                    android:id="@+id/tv_money_reward"
+                    android:background="@drawable/orange_box_bg"
+                    android:padding="@dimen/dm003"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/dm024"
+                    android:text="赏金50" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/dm050"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/peep_iv"
+                android:drawablePadding="@dimen/dm005"
+                android:textSize="@dimen/dm026"
+                android:textColor="@color/gray_9"
+                android:text="偷看人数" />
+
+            <TextView
+                android:id="@+id/tv_peep_num"
+                android:layout_marginLeft="@dimen/dm015"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/dm026"
+                android:text="500" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/wv_post_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="@dimen/dm030"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_details"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:maxLines="3"-->
+            <!--android:ellipsize="end"-->
+            <!--android:lineSpacingExtra="@dimen/dm008"-->
+            <!--android:text="介简介简介简介简介简介简介简介简介简介简介简介简介介简介简介简介简介简介简介简介简介简介简介简介简介介简介简介简介简介简介简介简介简介简介简介简介简介介简介简介简介简介简介简介简介简介简介简介简介简介介简介简介简介简介简介简介简介简介简介简介简介简介介简介简介简介简介简介简介简介简介简介简介简介简介介简介简介简介简介简介简介简介简介简介简介简介简介介简介简介简介简介简介简介简介简介简介简介简介简介"-->
+            <!--android:textSize="@dimen/dm028"-->
+            <!--android:textColor="@color/gray_3"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_down_arrow"-->
+            <!--android:layout_marginTop="@dimen/dm020"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="@dimen/dm040"-->
+            <!--android:layout_height="@dimen/dm040"-->
+            <!--android:src="@mipmap/down_arrow"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<com.risenb.studyknowledge.views.refreshlayout.MyRefreshLayout-->
+        <!--android:id="@+id/mrl_posts_task"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/rv_posts_task"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"/>-->
+
+    <!--</com.risenb.studyknowledge.views.refreshlayout.MyRefreshLayout>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_posts_task"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!---->
+    <!--</LinearLayout>-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm110"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:text="我来回答"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dm032" />
+
+        <!--评论-->
+        <LinearLayout
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/ll_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="@dimen/dm020">
+
+            <EditText
+                android:id="@+id/et_comment_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/dm020"
+                android:background="@drawable/sp_radiu_reply"
+                android:hint="评论"/>
+
+            <TextView
+                android:id="@+id/tv_commit"
+                android:layout_width="@dimen/dm110"
+                android:layout_height="@dimen/dm070"
+                android:layout_marginLeft="@dimen/dm010"
+                android:background="@drawable/sp_send_comment"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <include layout="@layout/include_bottom" />
+
+</LinearLayout>

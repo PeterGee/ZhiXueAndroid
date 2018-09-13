@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm141">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm140">
+            <ImageView
+                    android:id="@+id/iv_member_checked"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/gray_uncheck"
+                    android:layout_marginLeft="@dimen/dm020"/>
+            <ImageView
+                    android:id="@+id/iv_member_head"
+                    android:layout_width="@dimen/dm080"
+                    android:layout_height="@dimen/dm080"
+                    android:layout_marginLeft="@dimen/dm024"/>
+            <TextView
+                    android:id="@+id/tv_member_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:text="昵称"
+                    android:textColor="@color/gray_3"
+                    android:textSize="@dimen/dm026"/>
+            <ImageView
+                    android:id="@+id/iv_member_level"
+                    android:layout_marginLeft="@dimen/dm012"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/dm073"
+                    android:layout_height="@dimen/dm024" />
+        </LinearLayout>
+
+
+    <View
+        style="@style/view_line"
+        android:layout_marginLeft="@dimen/dm020"
+        android:layout_marginRight="@dimen/dm020"/>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include layout="@layout/include_title"/>
+    <ScrollView
+            android:scrollbars="none"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <RelativeLayout
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm400">
+                <EditText
+                    android:padding="5dp"
+                        android:id="@+id/et_sign"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:background="@null"
+                        android:textSize="@dimen/dm028"
+                        android:textColor="@color/gray_3"
+                        android:hint="@string/edit_sign_describe"
+                        android:textColorHint="@color/gray_9" />
+                <TextView
+                        android:id="@+id/tv_sign_length"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/dm016"
+                        android:layout_marginRight="@dimen/dm010"
+                        android:text="0/20"
+                        android:textColor="@color/gray_9"
+                        android:textSize="@dimen/dm024"/>
+                <View
+                        style="@style/view_line"/>
+
+            </RelativeLayout>
+            <TextView
+                    android:id="@+id/tv_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm066"
+                    android:layout_marginRight="@dimen/dm066"
+                    android:background="@mipmap/bg_botton"
+                    android:layout_marginTop="@dimen/dm250"
+                    android:gravity="center"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm032"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/include_bottom"/>
+</LinearLayout>

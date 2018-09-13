@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_all"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm100"
+        android:gravity="center"
+        android:text="全部"
+        android:textColor="@color/gray_6"
+        android:textSize="@dimen/dm030" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm002"
+        android:background="@color/gray_line"/>
+
+    <TextView
+        android:id="@+id/tv_course"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm100"
+        android:gravity="center"
+        android:text="课程"
+        android:textColor="@color/gray_6"
+        android:textSize="@dimen/dm030" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm002"
+        android:background="@color/gray_line"/>
+
+    <TextView
+        android:id="@+id/tv_voices"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm100"
+        android:gravity="center"
+        android:text="大家谈"
+        android:textColor="@color/gray_6"
+        android:textSize="@dimen/dm030" />
+
+</LinearLayout>

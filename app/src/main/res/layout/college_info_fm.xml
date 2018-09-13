@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_college_info"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dm040">
+
+            <com.risenb.studyknowledge.views.XCRoundRectImageView
+                android:id="@+id/iv_college"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm400"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/iv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/dm020"
+                android:background="@mipmap/info_edit" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_college_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dm030"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black_2"
+            android:textSize="@dimen/dm034" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dm030"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学院VIP等级"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/dm024" />
+
+            <ImageView
+                android:id="@+id/iv_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm010"
+                android:background="@mipmap/vip_iv" />
+
+            <TextView
+                android:id="@+id/tv_expire_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm040"
+                android:text=""
+                android:textColor="@color/gray_9"
+                android:textSize="@dimen/dm022" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dm040"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dm008"
+            android:text=""
+            android:textColor="#8c8c8c"
+            android:textSize="@dimen/dm028" />
+
+    </LinearLayout>
+
+</RelativeLayout>

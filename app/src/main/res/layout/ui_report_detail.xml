@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+    <include layout="@layout/include_title"/>
+    <include layout="@layout/include_bottom"/>
+    <LinearLayout
+            android:layout_above="@+id/v_bottom"
+            android:layout_marginTop="@dimen/dm133"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <include layout="@layout/report_list_item"/>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm010"
+                    android:background="@mipmap/report_detail_space"/>
+            <com.risenb.studyknowledge.views.refreshlayout.MyRefreshLayout
+                    android:id="@+id/refresh_layout"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_detail_list"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dm000">
+
+                </android.support.v7.widget.RecyclerView>
+            </com.risenb.studyknowledge.views.refreshlayout.MyRefreshLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

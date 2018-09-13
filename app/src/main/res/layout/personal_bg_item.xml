@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dm009"
+        android:layout_marginRight="@dimen/dm009"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+                android:layout_width="@dimen/dm224"
+                android:layout_height="@dimen/dm224">
+            <ImageView
+                    android:layout_width="@dimen/dm224"
+                    android:layout_height="@dimen/dm224"
+                    android:background="@mipmap/college_iv"/>
+            <ImageView
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm060"
+                    android:background="@mipmap/bg_personal_gray"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm060"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="时尚家居"
+                    android:textSize="@dimen/dm026"
+                    android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+    <Button
+            android:id="@+id/bt_change_bg"
+            android:layout_marginTop="@dimen/dm030"
+            android:layout_marginBottom="@dimen/dm034"
+            android:layout_width="@dimen/dm170"
+            android:layout_height="@dimen/dm046"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="使用中"
+            android:textSize="@dimen/dm030"
+            android:textColor="@color/white"
+            android:background="@mipmap/bg_orange"/>
+</LinearLayout>

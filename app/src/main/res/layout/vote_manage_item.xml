@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.guanaj.easyswipemenulibrary.EasySwipeMenuLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentView="@+id/content"
+        app:rightMenuView="@+id/right">
+        <LinearLayout
+            android:id="@+id/content"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/vote_manage_item_two"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/right"
+            android:layout_width="@dimen/dm240"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--<com.risenb.studyknowledge.views.ShadowLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:shadowColor="#fedbdbdb"-->
+                <!--app:shadowDx="0dp"-->
+                <!--app:shadowDy="0dp"-->
+                <!--app:shadowRadius="@dimen/dm010"-->
+                <!--app:shadowSide="left">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_menu_one"-->
+                    <!--android:layout_width="@dimen/dm110"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@color/white"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="编辑"-->
+                    <!--android:textColor="@color/gray_9"-->
+                    <!--android:textSize="@dimen/dm032" />-->
+            <!--</com.risenb.studyknowledge.views.ShadowLayout>-->
+
+
+            <com.risenb.studyknowledge.views.ShadowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:shadowColor="#fedbdbdb"
+                app:shadowDx="0dp"
+                app:shadowDy="0dp"
+                app:shadowRadius="@dimen/dm010"
+                app:shadowSide="left">
+
+                <TextView
+                    android:id="@+id/tv_menu_two"
+                    android:layout_width="@dimen/dm110"
+                    android:layout_height="match_parent"
+                    android:background="@color/pink_two"
+                    android:gravity="center"
+                    android:text="删除"
+                    android:textColor="@color/red_checked"
+                    android:textSize="@dimen/dm032" />
+            </com.risenb.studyknowledge.views.ShadowLayout>
+
+        </RelativeLayout>
+    </com.guanaj.easyswipemenulibrary.EasySwipeMenuLayout>
+
+</LinearLayout>

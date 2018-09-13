@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_title"/>
+    <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm000">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dm010"
+                android:layout_marginRight="@dimen/dm096"
+                android:layout_marginLeft="@dimen/dm096"
+                android:background="@mipmap/search_lecture_bg">
+            <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/search" />
+            <EditText
+                    android:id="@+id/et_search"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:hint="请输入你想搜索的关键词"
+                    android:textSize="@dimen/dm024"
+                    android:textColor="@color/gray_6"
+                    android:textColorHint="@color/gray_hint"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"/>
+        </LinearLayout>
+
+        <com.risenb.studyknowledge.views.refreshlayout.MyRefreshLayout
+                android:id="@+id/mrl_lecturer_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_lecturer_list"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+            </android.support.v7.widget.RecyclerView>
+        </com.risenb.studyknowledge.views.refreshlayout.MyRefreshLayout>
+    </LinearLayout>
+
+    <include layout="@layout/include_bottom"/>
+</LinearLayout>

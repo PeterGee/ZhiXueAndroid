@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@mipmap/member_medal_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+                android:id="@+id/bg_decoration"
+                android:layout_width="@dimen/dm000"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+    <RelativeLayout
+            android:layout_weight="1.75"
+            android:background="@color/white"
+            android:layout_width="@dimen/dm000"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_decoration_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm516">
+
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_below="@+id/rv_decoration_list"
+                android:layout_width="@dimen/dm300"
+                android:layout_height="@dimen/dm090"
+               android:layout_centerHorizontal="true"
+                android:background="@mipmap/bg_orange"
+                android:layout_marginTop="@dimen/dm170"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm032"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm034"
+                android:background="@mipmap/title_down_bg"/>
+    </RelativeLayout>
+
+</LinearLayout>

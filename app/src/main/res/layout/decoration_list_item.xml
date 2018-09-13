@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="@dimen/dm103">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm102">
+        <ImageView
+                android:id="@+id/iv_member_medal"
+                android:layout_width="@dimen/dm050"
+                android:layout_height="@dimen/dm050"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dm050"/>
+        <TextView
+                android:id="@+id/tv_medal"
+                android:layout_toRightOf="@+id/iv_member_medal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm032"
+                android:layout_centerVertical="true"
+                android:text="@string/decoration"
+                android:textSize="@dimen/dm032"
+                android:textColor="@color/gray_3"/>
+        <TextView
+                android:id="@+id/tv_decoration_name"
+                android:layout_toRightOf="@+id/tv_medal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dm020"
+                android:maxEms="6"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textSize="@dimen/dm028"
+                android:textColor="@color/gray_6"/>
+        <ImageView
+                android:id="@+id/iv_member_checked"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dm020"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/gray_uncheck"/>
+    </RelativeLayout>
+    <View
+            style="@style/view_line"
+            android:layout_marginLeft="@dimen/dm030"
+            android:layout_marginRight="@dimen/dm020"/>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_cost_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm100"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/gray_6"
+        android:textSize="@dimen/dm030" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm002"
+        android:background="@color/gray_line" />
+
+</LinearLayout>

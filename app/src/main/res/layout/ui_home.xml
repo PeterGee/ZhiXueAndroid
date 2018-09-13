@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/home_title_bg"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_statusbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:id="@+id/rl_title"
+            android:paddingTop="@dimen/dm003"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dm020"
+                android:paddingRight="@dimen/dm080">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dm065"
+                    android:layout_height="@dimen/dm073"
+                    android:background="@mipmap/head_bg">
+                    <ImageView
+                        android:id="@+id/iv_head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dm003"
+                        android:layout_marginBottom="@dimen/dm010"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/tab_college"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                app:tl_indicator_width_equal_title="true"
+                app:tl_tab_space_equal="true"
+                app:tl_textAllCaps="true"
+                app:tl_textsize="@dimen/dm036" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dm080"
+                android:paddingRight="@dimen/dm020">
+
+                <ImageView
+                    android:id="@+id/iv_college"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/institution_icon" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dm130"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</RelativeLayout>

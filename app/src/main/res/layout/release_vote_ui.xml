@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/ll_release_vote"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_title"/>
+    android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    style="@style/release_common_rl">
+
+                    <TextView
+                        style="@style/release_common_tv"
+                        android:text="添加标题"/>
+
+                    <EditText
+                        android:id="@+id/et_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:hint="请输入标题"
+                        android:maxLength="15"
+                        android:textColor="@color/gray_6"
+                        android:textColorHint="@color/gray_9"
+                        android:textSize="@dimen/dm030"/>
+                </RelativeLayout>
+
+                <View style="@style/gray_line"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_stick"
+                    style="@style/release_common_rl">
+
+                    <TextView
+                        style="@style/release_common_tv"
+                        android:text="是否置顶"/>
+
+                    <com.risenb.studyknowledge.views.SwitchButton
+                        android:id="@+id/sb_stick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        app:sb_checked="true"
+                        app:sb_checked_color="@color/orange"
+                        app:sb_show_indicator="false"/>
+
+                </RelativeLayout>
+
+                <View style="@style/gray_line"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_issuer"
+                    style="@style/release_common_rl">
+
+                    <TextView
+                        style="@style/release_common_tv"
+                        android:text="发布人"/>
+
+                    <ImageView
+                        android:id="@+id/iv_right_issuer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/right_arrow"/>
+
+                    <TextView
+                        android:id="@+id/tv_issuer"
+                        style="@style/release_common_tv_show"
+                        android:layout_toLeftOf="@+id/iv_right_issuer"/>
+
+                </RelativeLayout>
+
+                <View style="@style/gray_line"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_topic"
+                    style="@style/release_common_rl">
+
+                    <TextView
+                        style="@style/release_common_tv"
+                        android:text="话题"/>
+
+                    <ImageView
+                        android:id="@+id/iv_right_topic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/right_arrow"/>
+
+                    <TextView
+                        android:id="@+id/tv_topic"
+                        style="@style/release_common_tv_show"
+                        android:layout_toLeftOf="@+id/iv_right_topic"/>
+
+
+                </RelativeLayout>
+
+                <View style="@style/gray_line"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_vote_type"
+                    style="@style/release_common_rl">
+
+                    <TextView
+                        style="@style/release_common_tv"
+                        android:text="投票类型"/>
+
+                    <ImageView
+                        android:id="@+id/iv_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/right_arrow"/>
+
+                    <TextView
+                        android:id="@+id/tv_vote_type"
+                        style="@style/release_common_tv_show"
+                        android:layout_toLeftOf="@+id/iv_right"/>
+
+                </RelativeLayout>
+
+                <View style="@style/gray_line"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_start_time"
+                    style="@style/release_common_rl">
+
+                    <TextView
+                        style="@style/release_common_tv"
+                        android:text="开始时间"/>
+
+                    <ImageView
+                        android:id="@+id/iv_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/right_arrow"/>
+
+                    <TextView
+                        android:id="@+id/tv_start_time"
+                        style="@style/release_common_tv_show"
+                        android:layout_toLeftOf="@+id/iv_start_time"/>
+
+                </RelativeLayout>
+
+                <View style="@style/gray_line"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_end_time"
+                    style="@style/release_common_rl">
+
+                    <TextView
+                        style="@style/release_common_tv"
+                        android:text="结束时间"/>
+
+                    <ImageView
+                        android:id="@+id/iv_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/right_arrow"/>
+
+                    <TextView
+                        android:id="@+id/tv_end_time"
+                        style="@style/release_common_tv_show"
+                        android:layout_toLeftOf="@+id/iv_end_time"/>
+
+                </RelativeLayout>
+
+                <View style="@style/gray_line"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_select"
+                    style="@style/release_common_rl">
+
+                    <TextView
+                        style="@style/release_common_tv"
+                        android:text="是否多选"/>
+
+                    <com.risenb.studyknowledge.views.SwitchButton
+                        android:id="@+id/sb_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        app:sb_checked="true"
+                        app:sb_checked_color="@color/orange"
+                        app:sb_show_indicator="false"/>
+
+                </RelativeLayout>
+
+                <View style="@style/gray_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dm030">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/vote_iv"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm020"
+                        android:text="投票项"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/dm032"/>
+
+                </LinearLayout>
+
+                <View style="@style/gray_line"/>
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:descendantFocusability="afterDescendants">-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_vote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+                <!--</RelativeLayout>-->
+
+                <TextView
+                    android:id="@+id/tv_add_vote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dm050"
+                    android:padding="@dimen/dm020"
+                    android:text="+ 添加"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/dm032"/>
+
+                <TextView
+                    android:id="@+id/tv_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dm080"
+                    android:background="@mipmap/bg_botton"
+                    android:gravity="center"
+                    android:text="下一步"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm032"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <FrameLayout
+            android:id="@+id/fl_topic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/include_bottom"/>
+
+</LinearLayout>

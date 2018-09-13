@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <corners
+            android:topLeftRadius="@dimen/dm008" android:bottomLeftRadius="@dimen/dm008"
+            android:topRightRadius="@dimen/dm008" android:bottomRightRadius="@dimen/dm008"/><!--
+             设置圆角半径 -->
+
+    <stroke android:width="1dp" android:color="#33fd703e" />
+
+</shape>

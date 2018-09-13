@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    <ImageView
+            android:id="@+id/iv_medal_pic"
+            android:layout_marginRight="@dimen/dm018"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/dm036"
+            android:layout_height="@dimen/dm036"
+            android:src="@mipmap/medal_icon"/>
+
+</RelativeLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">要学就学</string>
+    <string name="main_title">学院管理系统</string>
+    <!--登录注册-->
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="commit">提交</string>
+    <string name="input_telphone">请输入手机号</string>
+    <string name="input_telphone_11">请输入11位手机号</string>
+    <string name="input_new_telphone">请输入您的新手机号</string>
+    <string name="input_password">请输入您的密码</string>
+    <string name="setting_pwd">密码为6～16位字符，由数字和字母组合</string>
+    <string name="confirm_pwd">确认密码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="code">验证码</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="find_pwd">找回密码</string>
+    <string name="weixin_login">微信登录</string>
+    <string name="login_phone">手机号不能为空</string>
+    <string name="login_right_phone">请输入正确的手机号</string>
+    <string name="login_pwd">密码不能为空</string>
+    <string name="login_confirm_pwd">确认密码不能为空</string>
+    <string name="login_long_pwd">请输入6-16位密码</string>
+    <string name="login_confirm_error">确认密码与密码不一致</string>
+    <string name="login_pwd_letter">密码请设置为数字和字母组合</string>
+    <string name="login_code_later">秒后重发</string>
+    <string name="login_right_code">验证码不能为空</string>
+    <string name="code_error">验证码不正确</string>
+    <string name="register_success">注册成功!</string>
+    <string name="network_error">请检查网络连接</string>
+    <string name="no_more_data">无更多数据</string>
+    <string name="limit_10">10</string>
+
+    <string name="introduction">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</string>
+    <!--人员管理-->
+    <string name="C_member_manager">C端会员管理</string>
+    <string name="member_application">会员申请</string>
+    <string name="kick_out_member">踢出的会员</string>
+    <string name="black_list">黑名单</string>
+    <string name="sign_in_manager">签到管理</string>
+    <string name="choose">选择</string>
+    <string name="kick_time">踢出时间</string>
+    <string name="black_time">拉黑时间</string>
+    <string name="invite">邀请</string>
+    <string name="cancel_black">取消拉黑</string>
+    <string name="member_level">会员等级</string>
+    <string name="search_member_name">搜索会员昵称</string>
+    <string name="edit">编辑</string>
+    <string name="kick_out">踢出</string>
+    <string name="member_setting">会员设置</string>
+    <string name="member_name">会员名称</string>
+    <string name="member_identity">会员身份</string>
+    <string name="is_black">是否拉黑</string>
+    <string name="is_noSpeaking">是否禁言</string>
+    <string name="award_decoration">授予勋章</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="decoration">勋章</string>
+    <string name="save">保存</string>
+    <string name="member_detail">会员详情</string>
+    <string name="level">等级</string>
+    <string name="talk_about">大家谈</string>
+    <string name="paid_question">有偿提问</string>
+    <string name="announce_title">公告标题</string>
+    <string name="announce_content">公告内容</string>
+    <string name="black_true">黑名单: 是</string>
+    <string name="black_false">黑名单: 否</string>
+    <string name="nospeaking_true">禁言: 是</string>
+    <string name="nospeaking_false">禁言: 否</string>
+    <string name="free">免费</string>
+    <string name="pay">付费</string>
+    <string name="nospeaking_to">禁言至</string>
+    <string name="nospeaking_time_tip">请您选择禁言时间!</string>
+    <string name="member_name_tip">请设置会员名称</string>
+    <!--学院管理-->
+    <string name="institution_manage">学院管理</string>
+    <string name="open_institution">开通学院</string>
+    <string name="member_level_setting">会员等级设置</string>
+    <string name="medal_manage">勋章管理</string>
+    <string name="vip_apply">VIP申请明细</string>
+    <string name="report_manage">举报管理</string>
+    <string name="friendly_business_in">友商管理(购进)</string>
+    <string name="friendly_business_out">友商管理(售出)</string>
+    <string name="recent_earnings">近期收益</string>
+    <string name="cash_details">提现明细</string>
+    <string name="announcement_edit">公告编辑</string>
+    <string name="feedback">意见反馈</string>
+    <string name="about_platform">关于平台</string>
+    <string name="add_cooperation">添加合作</string>
+    <string name="choose_teacher">选择讲师</string>
+    <string name="institution_name">学院名称</string>
+    <string name="jifen">升级所需积分</string>
+    <string name="add_medal">新增勋章</string>
+    <string name="edit_medal">编辑勋章</string>
+    <string name="medal_describe">勋章描述</string>
+    <string name="edit_medal_describe">编辑勋章描述</string>
+    <string name="medal_title_null">勋章标题不能为空</string>
+    <string name="medal_content_null">勋章描述不能为空</string>
+    <string name="medal_img_null">请添加勋章图片</string>
+    <string name="medal_num_tip">最多只允许添加10个勋章</string>
+    <string name="add_title">添加标题</string>
+    <string name="topic_in">所属话题</string>
+    <string name="publish_men">发布人</string>
+    <string name="inquire">查询</string>
+    <string name="purchase_period">购买期限</string>
+    <string name="gift_count">礼物总数</string>
+    <string name="total_price">共计总价</string>
+    <string name="amount_of_income">学院累计收入</string>
+    <string name="balance">学院剩余余额</string>
+    <string name="income_group">入群收益明细</string>
+    <string name="income_topic">话题收益明细</string>
+    <string name="income_post">帖子收益明细</string>
+    <string name="income_reward">打赏收益明细</string>
+    <string name="income_reward_divide">打赏分成收益明细</string>
+    <string name="income_paid_question">有偿提问收益明细</string>
+    <string name="inquire_start_time">查询起始日期</string>
+    <string name="inquire_end_time">查询结束日期</string>
+    <string name="back">返回</string>
+    <string name="vip_level">VIP等级</string>
+    <string name="deadline">期限</string>
+    <string name="state">状态</string>
+    <string name="purchase_type">购买类型</string>
+    <string name="apply_time">申请时间</string>
+    <string name="cash">提现</string>
+    <string name="cash_money">提现金额</string>
+    <string name="apply_time_two">申请时间:</string>
+    <string name="pay_state">支付状态:</string>
+    <string name="audit_time">审核时间:</string>
+    <string name="bound_bank">绑定银行:</string>
+    <string name="cash_available">可提金额:</string>
+    <string name="apply_cash">申请提现:</string>
+    <string name="input_price">请输入价格</string>
+    <string name="cash_notice">到账时间为一个工作日，提现金额不得小于十元。</string>
+    <string name="new_add">新增</string>
+    <string name="input_title">请输入标题</string>
+    <string name="input_content">请输入您想输入的公告内容</string>
+    <string name="announce_title_null">公告标题不能为空</string>
+    <string name="announce_content_null">公告内容不能为空</string>
+    <string name="input_feedback">请输入您想输入的反馈内容</string>
+    <string name="feedback_null">意见反馈内容不能为空</string>
+    <string name="feedback_platform">反馈至平台</string>
+    <string name="whole">全部</string>
+    <string name="delete_multiSelect">多选删除</string>
+    <string name="delete_all">全部删除</string>
+    <string name="rank">排序</string>
+    <string name="time">时间</string>
+    <string name="person_num">人数</string>
+    <string name="post_report">帖子举报</string>
+    <string name="floor_report">楼层举报</string>
+    <string name="report_detail">举报明细</string>
+    <!--个人信息-->
+    <string name="personal_info">个人信息</string>
+    <string name="modify_phone">修改绑定手机</string>
+    <string name="modify_mailbox">修改绑定邮箱</string>
+    <string name="modify_pwd">修改密码</string>
+    <string name="pwd_modify">密码修改</string>
+    <string name="user_name">用户名</string>
+    <string name="sign">签名</string>
+    <string name="personal_bg">个性背景</string>
+    <string name="edit_sign">编辑签名</string>
+    <string name="edit_username">编辑用户名</string>
+    <string name="click_edit_username">点击编辑用户名</string>
+    <string name="edit_sign_describe">编辑签名描述</string>
+    <string name="input_mailbox">请输入绑定邮箱</string>
+    <string name="input_new_mailbox">请输入新邮箱</string>
+    <string name="old_pwd">请输入您的旧密码（6～16位字符）</string>
+    <string name="new_pwd">请输入您的新密码（6～16位字符）</string>
+    <string name="in_use">使用中</string>
+    <string name="click_change">点击更换</string>
+    <string name="joined_college">加入的学院</string>
+    <string name="login_out">退出登录</string>
+    <string name="is_login_out">是否确定退出登陆?</string>
+    <string name="personal_sign">每一步成长，都需要熊样和梦想每一步成长长</string>
+    <string name="username_empty">编辑用户名不能为空</string>
+    <string name="sign_empty">编辑签名描述不能为空</string>
+    <!--话题管理-->
+    <string name="topic_list">话题列表</string>
+    <string name="action_manage">活动管理</string>
+    <string name="action_neophyte">活动参与者</string>
+    <string name="vote_manage">投票管理</string>
+    <string name="add_topic">添加话题</string>
+    <string name="vote_neophyte">投票参与者</string>
+    <string name="select_lecturer">选择讲师</string>
+    <string name="charge_privilege">权限</string>
+
+    <!-- 直播预告-->
+    <string name="release_live">发布直播预告</string>
+    <!--输入框字数提示语-->
+    <string name="et_length_username">用户名最大字符不能超过10个</string>
+    <string name="et_length_sign_tip">个性签名最大字符不能超过20个</string>
+    <string name="et_length_tip">搜索的最大字符不能超过20个</string>
+    <string name="et_length_content_tip">编辑内容的最大字符不能超过500个</string>
+    <string name="et_length_announce_title_tip">公告标题最大字符不能超过50个</string>
+    <string name="et_length_medalTitle_tip">勋章标题最大字符不能超过20个</string>
+    <string name="et_length_medalInfo_tip">勋章描述最大字符不能超过30个</string>
+    <!-- 正则判断 -->
+    <string name="telRegex">^[1][3,4,5,7,8][0-9]{9}$</string>
+
+    <array name="income_type">
+        <item>入群收益</item>
+        <item>话题收益</item>
+        <item>帖子收益</item>
+        <item>打赏收益</item>
+        <item>打赏分成</item>
+        <item>提问收益</item>
+    </array>
+    <array name="member_level">
+        <item>会员等级</item>
+        <item>vip1</item>
+        <item>vip2</item>
+        <item>vip3</item>
+        <item>vip4</item>
+    </array>
+    <array name="rank">
+        <item>排序</item>
+        <item>时间</item>
+        <item>人数</item>
+    </array>
+    <array name="select">
+        <item>全部</item>
+        <item>已读</item>
+        <item>未读</item>
+    </array>
+    <array name="member_identity">
+        <item>老师</item>
+        <item>学生</item>
+        <item>管理员</item>
+    </array>
+    <array name="nospeaking_time">
+        <item>10分钟</item>
+        <item>30分钟</item>
+        <item>1小时</item>
+    </array>
+    <array name="feedback_type">
+        <item>用户</item>
+        <item>学院</item>
+    </array>
+    <array name="adviceReadyn">
+        <item>否</item>
+        <item>是</item>
+    </array>
+    <array name="cash_pay_state">
+        <item>申请中</item>
+        <item>已审批打款</item>
+        <item>驳回申请</item>
+    </array>
+    <!--vip申请明细状态-->
+    <array name="pay_state">
+        <item>购买中</item>
+        <item>通过</item>
+        <item>拒绝</item>
+    </array>
+    <!--vip申请明细购买类型-->
+    <array name="gradeType">
+        <item>按年</item>
+        <item>按月</item>
+    </array>
+    <!-- 帖子-->
+    <string name="posts_list">帖子列表</string>
+    <string name="release_post">发布帖子</string>
+    <string name="update_post">编辑帖子</string>
+    <string name="release_action">发布活动</string>
+    <string name="release_vote">发布投票</string>
+    <string name="release_content">发布内容</string>
+    <string name="default_file_name">My Recording</string>
+
+    <array name="release_cost">
+        <item>免费</item>
+        <item>付费</item>
+    </array>
+
+    <array name="add_topic">
+        <item>免费</item>
+        <item>付费</item>
+        <item>VIP</item>
+        <item>权限</item>
+    </array>
+
+    <array name="topic_type">
+        <item>全部</item>
+        <item>课程</item>
+        <item>大家谈</item>
+    </array>
+
+
+</resources>

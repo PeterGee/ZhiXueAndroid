@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dm020">
+
+        <ImageView
+            android:id="@+id/iv_action_img"
+            android:layout_width="@dimen/dm220"
+            android:layout_height="@dimen/dm164"
+            android:scaleType="centerCrop"
+              />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm026"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_action_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="艺术博物馆管理"
+                    android:textColor="@color/gray_3"
+                    android:textSize="@dimen/dm030" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人数 "
+                    android:textColor="@color/gray_9"
+                    android:textSize="@dimen/dm024" />
+
+                <TextView
+                    android:id="@+id/tv_action_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/dm024" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_topic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm016"
+                android:text="话题：你好啊啊"
+                android:textColor="@color/gray_6"
+                android:textSize="@dimen/dm026" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm012"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/time_show_iv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm010"
+                    android:text="开始："
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/dm026" />
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm010"
+                    android:text="2017-9-21 12:09:99"
+                    android:textColor="@color/gray_9"
+                    android:textSize="@dimen/dm022" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm012"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/time_show_iv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm010"
+                    android:text="结束："
+                    android:textColor="@color/red_checked"
+                    android:textSize="@dimen/dm026" />
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm010"
+                    android:text="2017-9-21 12:09:99"
+                    android:textColor="@color/gray_9"
+                    android:textSize="@dimen/dm022" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

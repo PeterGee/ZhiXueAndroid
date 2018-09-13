@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_release_post"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm000"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/release_common_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm100"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/release_common_tv"
+                    android:text="添加话题" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/iv_right_title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:background="@mipmap/right_arrow" />-->
+
+                <EditText
+                    android:id="@+id/et_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入标题"
+                    android:maxLength="15"
+                    android:textColor="@color/gray_6"
+                    android:textColorHint="@color/gray_9"
+                    android:textSize="@dimen/dm030" />
+            </LinearLayout>
+
+            <View style="@style/gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_cost"
+                style="@style/release_common_rl">
+
+                <TextView
+                    style="@style/release_common_tv"
+                    android:text="是否付费" />
+
+                <ImageView
+                    android:id="@+id/iv_right_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/right_arrow" />
+
+                <TextView
+                    android:id="@+id/tv_cost"
+                    style="@style/release_common_tv_show"
+                    android:layout_toLeftOf="@+id/iv_right_cost" />
+
+
+            </RelativeLayout>
+
+            <View style="@style/gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_stick"
+                style="@style/release_common_rl">
+
+                <TextView
+                    style="@style/release_common_tv"
+                    android:text="是否置顶" />
+
+                <com.risenb.studyknowledge.views.SwitchButton
+                    android:id="@+id/sb_stick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:sb_background="@color/gray"
+                    app:sb_checked_color="@color/orange"
+                    app:sb_show_indicator="false" />
+
+            </RelativeLayout>
+
+            <View style="@style/gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_issuer"
+                style="@style/release_common_rl">
+
+                <TextView
+                    style="@style/release_common_tv"
+                    android:text="发布人" />
+
+                <ImageView
+                    android:id="@+id/iv_right_issuer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/right_arrow" />
+
+                <TextView
+                    android:id="@+id/tv_issuer"
+                    style="@style/release_common_tv_show"
+                    android:layout_toLeftOf="@+id/iv_right_issuer" />
+
+            </RelativeLayout>
+
+            <View style="@style/gray_line" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_confirm"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dm090"-->
+            <!--android:layout_margin="@dimen/dm080"-->
+            <!--android:background="@drawable/release_input_bg"-->
+            <!--android:gravity="center"-->
+            <!--android:text="下一步"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/dm030" />-->
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm078"
+                android:layout_marginRight="@dimen/dm078"
+                android:layout_marginTop="@dimen/dm212"
+                android:background="@mipmap/bg_botton"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm032" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/include_bottom" />
+
+</LinearLayout>

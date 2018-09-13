@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.guanaj.easyswipemenulibrary.EasySwipeMenuLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentView="@+id/content"
+        app:rightMenuView="@+id/right">
+        <LinearLayout
+            android:id="@+id/content"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_vote_content"
+                android:padding="@dimen/dm030"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dm028"
+                android:textColor="@color/gray_6"
+                android:text="sfddgsdg"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_menu"
+                android:layout_width="@dimen/dm100"
+                android:layout_height="match_parent"
+                android:background="@color/pink_two"
+                android:gravity="center"
+                android:textColor="@color/red_checked"
+                android:textSize="@dimen/dm032"
+                android:text="删除" />
+        </LinearLayout>
+    </com.guanaj.easyswipemenulibrary.EasySwipeMenuLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm002"
+        android:background="@color/gray_line" />
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm200">
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/dm050"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/vip_dotted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_vip_grade"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/dm073"
+                android:layout_height="@dimen/dm024" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_vip_grade"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/orange"-->
+                <!--android:textSize="@dimen/dm024"/>-->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dm032"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_9"
+                    android:textSize="@dimen/dm024"
+                    android:text="是否直播："/>
+
+                <TextView
+                    android:id="@+id/tv_if_live"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_6"
+                    android:textSize="@dimen/dm024"
+                    android:text="是"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_9"
+                    android:textSize="@dimen/dm024"
+                    android:text="学员等级月费："/>
+
+                <TextView
+                    android:id="@+id/tv_monthly_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_6"
+                    android:textSize="@dimen/dm024"
+                    android:text="50"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_9"
+                    android:textSize="@dimen/dm024"
+                    android:text="上线人数："/>
+
+                <TextView
+                    android:id="@+id/tv_person_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_6"
+                    android:textSize="@dimen/dm024"
+                    android:text="50"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dm038"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_9"
+                    android:textSize="@dimen/dm024"
+                    android:text="可直播数："/>
+
+                <TextView
+                    android:id="@+id/tv_live_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_6"
+                    android:textSize="@dimen/dm024"
+                    android:text="50"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_9"
+                    android:textSize="@dimen/dm024"
+                    android:text="年付费："/>
+
+                <TextView
+                    android:id="@+id/tv_year_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_6"
+                    android:textSize="@dimen/dm024"
+                    android:text="50"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_9"
+                    android:textSize="@dimen/dm024"
+                    android:text="上线话题数："/>
+
+                <TextView
+                    android:id="@+id/tv_topic_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_6"
+                    android:textSize="@dimen/dm024"
+                    android:text="50"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="@dimen/dm030"
+        android:layout_marginRight="@dimen/dm030"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm005"
+        android:background="@color/gray_line"/>
+
+</LinearLayout>
